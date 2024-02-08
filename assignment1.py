@@ -6,11 +6,17 @@ class Car:
 
     def showme(self):
         print("Car brand is " + self.brand)
-        print("Car model is " + self.model)
+        print(f"Car model is {self.model}")
 
-if __name__ == "__main__":
+
+def main():
     civic = Car("Honda", "Civic")
     lambo = Car("Lamborghini", "Diablo")
 
     civic.showme()
+    print("--------------")
     lambo.showme()
+
+
+if __name__ == "__main__":
+    main()
